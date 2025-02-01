@@ -1,0 +1,5 @@
+C:\Users\natha\Documents\GitHub\sharpCOMpass\SharpCOMpass\src\SharpCOMpass\obj\Debug\net7.0\SharpCOMpass.csproj.AssemblyReference.cache
+C:\Users\natha\Documents\GitHub\sharpCOMpass\SharpCOMpass\src\SharpCOMpass\obj\Debug\net7.0\SharpCOMpass.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\natha\Documents\GitHub\sharpCOMpass\SharpCOMpass\src\SharpCOMpass\obj\Debug\net7.0\SharpCOMpass.AssemblyInfoInputs.cache
+C:\Users\natha\Documents\GitHub\sharpCOMpass\SharpCOMpass\src\SharpCOMpass\obj\Debug\net7.0\SharpCOMpass.AssemblyInfo.cs
+C:\Users\natha\Documents\GitHub\sharpCOMpass\SharpCOMpass\src\SharpCOMpass\obj\Debug\net7.0\SharpCOMpass.csproj.CoreCompileInputs.cache

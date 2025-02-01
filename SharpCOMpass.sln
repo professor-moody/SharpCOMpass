@@ -1,0 +1,35 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B2E3F6D7-3F35-48D1-97CC-C9D0C0556B2D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{C7A69D2E-4C6B-4D3C-9E7B-8A9C1E292C0F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpCOMpass", "src\SharpCOMpass\SharpCOMpass.csproj", "{3F435AE2-8073-4F2C-9DE9-8E5F5858E698}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpCOMpass.Tests", "tests\SharpCOMpass.Tests\SharpCOMpass.Tests.csproj", "{E7D68C08-6B0E-4F4B-8935-1D2697E65BC8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3F435AE2-8073-4F2C-9DE9-8E5F5858E698}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F435AE2-8073-4F2C-9DE9-8E5F5858E698}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F435AE2-8073-4F2C-9DE9-8E5F5858E698}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F435AE2-8073-4F2C-9DE9-8E5F5858E698}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7D68C08-6B0E-4F4B-8935-1D2697E65BC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7D68C08-6B0E-4F4B-8935-1D2697E65BC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7D68C08-6B0E-4F4B-8935-1D2697E65BC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7D68C08-6B0E-4F4B-8935-1D2697E65BC8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3F435AE2-8073-4F2C-9DE9-8E5F5858E698} = {B2E3F6D7-3F35-48D1-97CC-C9D0C0556B2D}
+		{E7D68C08-6B0E-4F4B-8935-1D2697E65BC8} = {C7A69D2E-4C6B-4D3C-9E7B-8A9C1E292C0F}
+	EndGlobalSection
+EndGlobal

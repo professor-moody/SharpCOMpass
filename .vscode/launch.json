@@ -1,0 +1,22 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "C#: SharpCOMpass",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/src/SharpCOMpass/bin/Debug/net9.0/SharpCOMpass.dll",
+            "args": [
+                "--debug",
+                "--output", "results.json"
+            ],
+            "cwd": "${workspaceFolder}/src/SharpCOMpass",
+            "console": "internalConsole",
+            "stopAtEntry": false,
+            "env": {
+                "DOTNET_ENVIRONMENT": "Development"
+            }
+        }
+    ]
+}
