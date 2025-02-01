@@ -1,0 +1,10 @@
+COM Security Analysis Report
+Generated: 2025-02-01 14:29:54
+
+Total Objects Analyzed: 6624
+Objects Requiring Elevation: 110
+
+Server Types:
+  InprocServer32: 5974
+  Unknown: 379
+  LocalServer32: 271

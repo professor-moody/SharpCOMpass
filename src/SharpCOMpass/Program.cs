@@ -1,4 +1,4 @@
-// Program.cs
+// src/SharpCOMpass/Program.cs
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Configuration;
@@ -15,32 +15,38 @@ namespace SharpCOMpass;
 
 public class Program
 {
-    public static async Task<int> Main(string[] args)
+    public static int Main(string[] args)
     {
-        var rootCommand = new RootCommand("SharpCOMcompass - COM Security Analysis Tool");
+        return MainAsync(args).GetAwaiter().GetResult();
+    }
+
+    private static async Task<int> MainAsync(string[] args)
+    {
+        var rootCommand = new RootCommand("SharpCOMpass - COM Security Analysis Tool");
         
+        // Command line options
         var debugOption = new Option<bool>(
             name: "--debug",
             description: "Enable debug logging");
-           
+            
         var outputOption = new Option<FileInfo?>(
             name: "--output",
             description: "Save results to specified file");
-          
+            
         var formatOption = new Option<ReportFormat>(
             name: "--format",
             description: "Output format (json, text, or html)",
             getDefaultValue: () => ReportFormat.Text);
-  
+        
         var configOption = new Option<FileInfo?>(
             name: "--config",
             description: "Path to configuration file");
-      
+
         rootCommand.AddGlobalOption(debugOption);
         rootCommand.AddGlobalOption(outputOption);
         rootCommand.AddGlobalOption(formatOption);
         rootCommand.AddGlobalOption(configOption);
-       
+
         rootCommand.SetHandler(async (bool debug, FileInfo? output, ReportFormat format, FileInfo? config) =>
         {
             await RunAnalysis(new AnalysisOptions
@@ -51,9 +57,11 @@ public class Program
                 ConfigFile = config
             });
         }, debugOption, outputOption, formatOption, configOption);
-   
+
         return await rootCommand.InvokeAsync(args);
-    }  
+    }
+
+    // ... rest of the Program class implementation remains the same
 
     private static async Task RunAnalysis(AnalysisOptions options) 
     {
